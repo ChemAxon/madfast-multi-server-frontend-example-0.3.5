@@ -1,0 +1,17 @@
+.hidden-with-fadeout {
+    /* See https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
+    /* When this class applied the element will be hidden with a transition */
+    /* When this class removed the element will be shown immediately */
+    opacity: 0.15;
+    -webkit-transition: opacity .8s;
+    -moz-transition: opacity .8s;
+    -ms-transition: opacity .8s;
+    -o-transition: opacity .8s;
+    transition: opacity .8s;
+    
+}
+
+/* see https://stackoverflow.com/questions/27747072/vertical-align-in-bootstrap-table */
+.table > tbody > tr > td {
+     vertical-align: middle !important;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <!-- WARNING! This example uses highly experimental functionality, expect breaking changes! -->
+
+    <!-- Workaround for Font Awesome loading -->
+    <!-- Expect problems when exposing MadFast on a non-root URI through a reverse proxy -->
+    <!-- See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base -->
+    <base href="/">
+    <!-- End of workaround -->
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/mfss-32.png" type="image/x-icon" >
+
+    <!-- Include custom styles for the index page. Note that the Web UI client facade included above -->
+    <!-- injects all the styles shipped with the Web UI -->
+    <link rel="stylesheet" href="additional/css/multi-server-index-page.css" type="text/css" >
+
+
+    <title>MadFast - connect to multiple servers</title>
+
+    <!-- Include the packed Web UI facade from MadFast distribution -->
+    <!-- In the example configuration all serves exposes the Web UI -->
+    <script src="dist/common.bundle.js"></script>
+    <script src="dist/jsclient.bundle.js"></script>
+
+
+    <!-- Web UI facade misses some components/functionalities in MadFast 0.3.6. This shim injects them. -->
+    <!-- The injected locations are expected to be compatible with the next release(s). -->
+    <script src="additional/js/js-client-lib-shim.js"></script>
+
+
+
+    <!-- Include custom index page -->
+    <script src="additional/js/multi-server-index-page.js"></script>
+
+</head>
+<body>
+</body>
+</html>
+

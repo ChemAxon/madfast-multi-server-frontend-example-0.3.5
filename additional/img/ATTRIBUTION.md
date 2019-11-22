@@ -1,0 +1,2 @@
+Image `server-icon-64.png` is from <https://publicdomainvectors.org/en/free-clipart/Vector-drawing-of-database-server/13558.html>. According to the
+linked page the source image is in public domain (<https://creativecommons.org/publicdomain/zero/1.0/>).

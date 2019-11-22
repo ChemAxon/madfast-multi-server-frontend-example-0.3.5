@@ -1,0 +1,71 @@
+{
+  "servers": [
+    {
+      "name" : "First server",
+      "description" : "A regular example server.",
+      "root" : "http://localhost:18085/",
+      "descriptors" : [
+        {
+          "name" : "antibiotics-cfp7",
+          "description" : "The sample antibiotics dataset with CFP-7 fingerprints"
+        },
+        {
+          "name" : "vitamins-cfp7",
+          "description" : "The sample vitamins dataset with CFP-7 fingerprints"
+        }
+      ]
+    },
+    {
+      "name" : "Second server",
+      "description" : "Example server with a very slow startup. The exposed descriptors are not loaded immediately.",
+      "root" : "http://localhost:18086/",
+      "descriptors" : [
+        {
+          "name" : "pubchem1k-cfp7",
+          "description" : "1k random structures from PubChem with CFP-7 fingerprints"
+        },
+        {
+          "name" : "essentials-cfp7",
+          "description" : "WHO Essential Medicines set with CFP-7 fingerprints."
+        }
+      ]
+    },
+    {
+      "name" : "Third server",
+      "description" : "Example server with a not so slow startup. The exposed descriptors are not loaded immediately.",
+      "root" : "http://localhost:18087/",
+      "descriptors" : [
+        {
+          "name" : "pubchem1k-cfp7",
+          "description" : "1k random structures from PubChem with CFP-7 fingerprints"
+        },
+        {
+          "name" : "essentials-cfp7",
+          "description" : "WHO Essential Medicines set with CFP-7 fingerprints."
+        }
+      ]
+    },
+    {
+      "name" : "Fourth server",
+      "description" : "This server is sometimes down. (The example contains a script which shuts down this server only.)",
+      "root" : "http://localhost:18088/",
+      "descriptors" : [
+        {
+          "name" : "drugbank-cfp7",
+          "description" : "Drugbank dataset with CFP-7 fingerprints"
+        }
+      ]
+    },
+    {
+      "name" : "Down server",
+      "description" : "This server is NOT launched in the example; it is always down.",
+      "root" : "http://localhost:18089/",
+      "descriptors" : [
+        {
+          "name" : "xxxx-cfp7",
+          "description" : "This server is always down; this descriptor will not be available"
+        }
+      ]
+    }
+  ]
+}
